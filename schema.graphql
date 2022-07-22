@@ -1,0 +1,12 @@
+type Mutation {
+	callPost(path: String!, body: String!): AWSJSON!
+}
+
+type Query {
+	call(path: String!): AWSJSON!
+}
+
+schema {
+	query: Query
+	mutation: Mutation
+}
